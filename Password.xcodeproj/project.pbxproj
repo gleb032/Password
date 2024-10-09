@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,12 +14,30 @@
 		2C14443C2C9AD23A0066BFAA /* ManageUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14443B2C9AD23A0066BFAA /* ManageUsersView.swift */; };
 		2C14443E2C9AD24E0066BFAA /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14443D2C9AD24E0066BFAA /* EditUserView.swift */; };
 		2C1444402C9AE0EF0066BFAA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14443F2C9AE0EF0066BFAA /* AboutView.swift */; };
+		2C589D072CB6AC9E00F00E76 /* Encryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C589D062CB6AC9600F00E76 /* Encryptor.swift */; };
+		2C589D0A2CB6AEA100F00E76 /* FunctionalPrimitives in Frameworks */ = {isa = PBXBuildFile; productRef = 2C589D092CB6AEA100F00E76 /* FunctionalPrimitives */; };
+		2C589D0C2CB6AF2800F00E76 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C589D0B2CB6AF2000F00E76 /* CaesarCipherEncryptor.swift */; };
+		2C589D0E2CB6AF6100F00E76 /* Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C589D0D2CB6AF6000F00E76 /* Encryption.swift */; };
+		2C589D112CB6AFDD00F00E76 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 2C589D102CB6AFDD00F00E76 /* Tagged */; };
+		2C589D132CB6AFDD00F00E76 /* TaggedMoney in Frameworks */ = {isa = PBXBuildFile; productRef = 2C589D122CB6AFDD00F00E76 /* TaggedMoney */; };
+		2C589D152CB6AFDD00F00E76 /* TaggedTime in Frameworks */ = {isa = PBXBuildFile; productRef = 2C589D142CB6AFDD00F00E76 /* TaggedTime */; };
+		2C589D172CB6B05500F00E76 /* GammaEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C589D162CB6B04400F00E76 /* GammaEncryptor.swift */; };
 		2CE37D812C97287D0045B058 /* PasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE37D802C97287D0045B058 /* PasswordApp.swift */; };
 		2CE37D832C97287D0045B058 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE37D822C97287D0045B058 /* ContentView.swift */; };
 		2CE37D852C97287E0045B058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE37D842C97287E0045B058 /* Assets.xcassets */; };
 		2CE37D882C97287E0045B058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE37D872C97287E0045B058 /* Preview Assets.xcassets */; };
 		2CE37D912C9728B50045B058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE37D902C9728B50045B058 /* User.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C589D242CB6BB1500F00E76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CE37D752C97287D0045B058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE37D7C2C97287D0045B058;
+			remoteInfo = Password;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2C1444322C9AD12C0066BFAA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -29,6 +47,11 @@
 		2C14443B2C9AD23A0066BFAA /* ManageUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageUsersView.swift; sourceTree = "<group>"; };
 		2C14443D2C9AD24E0066BFAA /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		2C14443F2C9AE0EF0066BFAA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		2C589D062CB6AC9600F00E76 /* Encryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryptor.swift; sourceTree = "<group>"; };
+		2C589D0B2CB6AF2000F00E76 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
+		2C589D0D2CB6AF6000F00E76 /* Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encryption.swift; sourceTree = "<group>"; };
+		2C589D162CB6B04400F00E76 /* GammaEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaEncryptor.swift; sourceTree = "<group>"; };
+		2C589D202CB6BB1500F00E76 /* PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE37D7D2C97287D0045B058 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE37D802C97287D0045B058 /* PasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordApp.swift; sourceTree = "<group>"; };
 		2CE37D822C97287D0045B058 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,11 +60,26 @@
 		2CE37D902C9728B50045B058 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2C589D212CB6BB1500F00E76 /* PasswordTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PasswordTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		2C589D1D2CB6BB1500F00E76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE37D7A2C97287D0045B058 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C589D112CB6AFDD00F00E76 /* Tagged in Frameworks */,
+				2C589D152CB6AFDD00F00E76 /* TaggedTime in Frameworks */,
+				2C589D0A2CB6AEA100F00E76 /* FunctionalPrimitives in Frameworks */,
+				2C589D132CB6AFDD00F00E76 /* TaggedMoney in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +100,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2C589D052CB6AC4F00F00E76 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				2C589D162CB6B04400F00E76 /* GammaEncryptor.swift */,
+				2C589D0D2CB6AF6000F00E76 /* Encryption.swift */,
+				2C589D0B2CB6AF2000F00E76 /* CaesarCipherEncryptor.swift */,
+				2C589D062CB6AC9600F00E76 /* Encryptor.swift */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
 		2CE37D742C97287D0045B058 = {
 			isa = PBXGroup;
 			children = (
 				2CE37D7F2C97287D0045B058 /* Password */,
+				2C589D212CB6BB1500F00E76 /* PasswordTests */,
 				2CE37D7E2C97287D0045B058 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE37D7D2C97287D0045B058 /* Password.app */,
+				2C589D202CB6BB1500F00E76 /* PasswordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +132,7 @@
 		2CE37D7F2C97287D0045B058 /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				2C589D052CB6AC4F00F00E76 /* Encryption */,
 				2C1444362C9AD1AB0066BFAA /* Views */,
 				2CE37D802C97287D0045B058 /* PasswordApp.swift */,
 				2CE37D842C97287E0045B058 /* Assets.xcassets */,
@@ -102,6 +154,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C589D1F2CB6BB1500F00E76 /* PasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C589D262CB6BB1500F00E76 /* Build configuration list for PBXNativeTarget "PasswordTests" */;
+			buildPhases = (
+				2C589D1C2CB6BB1500F00E76 /* Sources */,
+				2C589D1D2CB6BB1500F00E76 /* Frameworks */,
+				2C589D1E2CB6BB1500F00E76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C589D252CB6BB1500F00E76 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C589D212CB6BB1500F00E76 /* PasswordTests */,
+			);
+			name = PasswordTests;
+			packageProductDependencies = (
+			);
+			productName = PasswordTests;
+			productReference = 2C589D202CB6BB1500F00E76 /* PasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2CE37D7C2C97287D0045B058 /* Password */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CE37D8B2C97287E0045B058 /* Build configuration list for PBXNativeTarget "Password" */;
@@ -126,9 +201,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					2C589D1F2CB6BB1500F00E76 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2CE37D7C2C97287D0045B058;
+					};
 					2CE37D7C2C97287D0045B058 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -143,16 +222,28 @@
 				Base,
 			);
 			mainGroup = 2CE37D742C97287D0045B058;
+			packageReferences = (
+				2C589D082CB6AEA100F00E76 /* XCRemoteSwiftPackageReference "FunctionalPrimitives" */,
+				2C589D0F2CB6AFDD00F00E76 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
 			productRefGroup = 2CE37D7E2C97287D0045B058 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2CE37D7C2C97287D0045B058 /* Password */,
+				2C589D1F2CB6BB1500F00E76 /* PasswordTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C589D1E2CB6BB1500F00E76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE37D7B2C97287D0045B058 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,11 +256,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C589D1C2CB6BB1500F00E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE37D792C97287D0045B058 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C589D0C2CB6AF2800F00E76 /* CaesarCipherEncryptor.swift in Sources */,
+				2C589D072CB6AC9E00F00E76 /* Encryptor.swift in Sources */,
 				2C14443E2C9AD24E0066BFAA /* EditUserView.swift in Sources */,
+				2C589D0E2CB6AF6100F00E76 /* Encryption.swift in Sources */,
+				2C589D172CB6B05500F00E76 /* GammaEncryptor.swift in Sources */,
 				2C1444382C9AD1FC0066BFAA /* MainMenuView.swift in Sources */,
 				2C14443A2C9AD2190066BFAA /* ChangePasswordView.swift in Sources */,
 				2C1444352C9AD18E0066BFAA /* LoginView.swift in Sources */,
@@ -184,7 +286,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2C589D252CB6BB1500F00E76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE37D7C2C97287D0045B058 /* Password */;
+			targetProxy = 2C589D242CB6BB1500F00E76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2C589D272CB6BB1500F00E76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LM2FRMCNV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.glebfandeev.PasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Password";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2C589D282CB6BB1500F00E76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4LM2FRMCNV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.glebfandeev.PasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Password.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Password";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		2CE37D892C97287E0045B058 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C589D262CB6BB1500F00E76 /* Build configuration list for PBXNativeTarget "PasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C589D272CB6BB1500F00E76 /* Debug */,
+				2C589D282CB6BB1500F00E76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2CE37D782C97287D0045B058 /* Build configuration list for PBXProject "Password" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -384,6 +549,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C589D082CB6AEA100F00E76 /* XCRemoteSwiftPackageReference "FunctionalPrimitives" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gleb032/FunctionalPrimitives";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		2C589D0F2CB6AFDD00F00E76 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C589D092CB6AEA100F00E76 /* FunctionalPrimitives */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C589D082CB6AEA100F00E76 /* XCRemoteSwiftPackageReference "FunctionalPrimitives" */;
+			productName = FunctionalPrimitives;
+		};
+		2C589D102CB6AFDD00F00E76 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C589D0F2CB6AFDD00F00E76 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		2C589D122CB6AFDD00F00E76 /* TaggedMoney */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C589D0F2CB6AFDD00F00E76 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedMoney;
+		};
+		2C589D142CB6AFDD00F00E76 /* TaggedTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C589D0F2CB6AFDD00F00E76 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CE37D752C97287D0045B058 /* Project object */;
 }

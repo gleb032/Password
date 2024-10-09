@@ -28,8 +28,9 @@ struct ChangePasswordView: View {
             assertionFailure()
             return
           }
-          guard oldPassword == loggedUser.password  else {
-            state =  .failure(.oldPasswordIncorrect)
+          
+          guard userManager.checkPassword(input: oldPassword) else {
+            state = .failure(.oldPasswordIncorrect)
             return
           }
 

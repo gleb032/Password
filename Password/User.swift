@@ -1,10 +1,10 @@
 import Foundation
-import Combine
+import Tagged
 
 struct User: Identifiable, Codable, Equatable {
   var id = UUID()
   var name: String
-  var password: String
+  var password: Tagged<Encrypted, String>
   var isBlocked = false
   var passwordRestriction = false
 }
