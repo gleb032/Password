@@ -6,8 +6,10 @@ class UserManager: ObservableObject {
   @Published var passwordAttempts = 0
 
   private let userFile = "users.json"
+  private let encryptor: Encryption
 
-  init() {
+  init(encryptor: Encryption) {
+    self.encryptor = encryptor
     loadUsers()
   }
 
@@ -48,7 +50,8 @@ class UserManager: ObservableObject {
       return .invalidUsername
     }
 
-    if user.password == password {
+    let enctyptedPassword = encryptor.encrypt(password)
+    if user.password == enctyptedPassword {
       passwordAttempts = 0
       loggedUser = user
       return nil
@@ -56,6 +59,10 @@ class UserManager: ObservableObject {
 
     passwordAttempts += 1
     return .invalidPassword
+  }
+
+  func checkPassword(input: String) -> Bool {
+    loggedUser?.password == encryptor.encrypt(input)
   }
 
   func isPasswordValid(_ password: String, restriction: Bool) -> Bool {
@@ -68,8 +75,9 @@ class UserManager: ObservableObject {
 
   func changePassword(for user: User, newPassword: String) {
     if let index = users.firstIndex(where: { $0.id == user.id }) {
-      users[index].password = newPassword
-      loggedUser?.password = newPassword
+      let newEnctyptedPassword = encryptor.encrypt(newPassword)
+      users[index].password = newEnctyptedPassword
+      loggedUser?.password = newEnctyptedPassword
       saveUsers()
     }
   }
